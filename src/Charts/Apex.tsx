@@ -4,7 +4,10 @@ import { GraphPreviewContainer } from "../GraphPreviewContainer"
 
 export const Apex = () => {
   return (
-    <GraphPreviewContainer title="ApexCharts">
+    <GraphPreviewContainer
+      title="ApexCharts"
+      ghLink="https://github.com/jmsv/react-charts-comparison/blob/main/src/Charts/Apex.tsx"
+    >
       <Chart
         options={{
           chart: {

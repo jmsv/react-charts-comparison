@@ -16,7 +16,7 @@ export const App: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button shape="round" icon={<GithubOutlined />}>
+          <Button shape="round" type="primary" icon={<GithubOutlined />}>
             GitHub
           </Button>
         </a>
