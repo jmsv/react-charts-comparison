@@ -59,7 +59,7 @@ export const GraphPreviewContainer: React.FC<IGraphPreviewContainerProps> = ({
             {prettier
               .format(
                 reactElementToJSXString(children, {
-                  displayName: () => "Chart",
+                  // displayName: () => "Chart",
                 }),
                 {
                   semi: false,

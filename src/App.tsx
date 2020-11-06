@@ -1,7 +1,7 @@
 import React from "react"
 import { Button, Typography } from "antd"
-import { Apex } from "./Charts"
 import { GithubOutlined } from "@ant-design/icons"
+import { Apex, Recharts } from "./Charts"
 
 export const App: React.FC = () => {
   return (
@@ -23,6 +23,7 @@ export const App: React.FC = () => {
       </div>
 
       <Apex />
+      <Recharts />
     </div>
   )
 }
