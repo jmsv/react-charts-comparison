@@ -60,17 +60,23 @@ export const Recharts = () => {
           ]}
           margin={{
             top: 20,
-            right: 20,
+            right: 80,
             bottom: 20,
             left: 20,
           }}
         >
           <CartesianGrid stroke="#f5f5f5" />
-          <XAxis dataKey="name" />
-          <YAxis />
+          <XAxis
+            dataKey="name"
+            label={{ value: "Pages", position: "insideBottomRight", offset: 0 }}
+          />
+          <YAxis
+            label={{ value: "Index", angle: -90, position: "insideLeft" }}
+          />
           <Tooltip />
           <Legend />
-          <Bar dataKey="uv" barSize={20} fill="#413ea0" />
+          <Bar dataKey="pv" barSize={20} fill="#413ea0" />
+          <Bar dataKey="amt" barSize={20} fill="#82ca9d" />
           <Line type="monotone" dataKey="uv" stroke="#ff7300" />
         </ComposedChart>
       </ResponsiveContainer>

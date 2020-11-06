@@ -42,7 +42,9 @@ export const GraphPreviewContainer: React.FC<IGraphPreviewContainerProps> = ({
       className="mt-10"
     >
       <div className="flex flex-wrap space-x-12">
-        <div className="w-full lg:w-1/2 xl:w-1/2">{children}</div>
+        <div className="w-full lg:w-1/2 xl:w-1/2" style={{ height: "28rem" }}>
+          {children}
+        </div>
 
         <div
           className="w-full lg:w-1/2 xl:w-1/2 h-50 overflow-y-auto px-4"
