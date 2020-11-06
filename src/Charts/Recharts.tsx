@@ -75,8 +75,9 @@ export const Recharts = () => {
           />
           <Tooltip />
           <Legend />
-          <Bar dataKey="pv" barSize={20} fill="#413ea0" />
-          <Bar dataKey="amt" barSize={20} fill="#82ca9d" />
+          <Bar stackId="a" dataKey="pv" barSize={20} fill="#413ea0" />
+          <Bar stackId="a" dataKey="amt" barSize={20} fill="#82ca9d" />
+          <Bar dataKey="amt" barSize={20} fill="#b22" />
           <Line type="monotone" dataKey="uv" stroke="#ff7300" />
         </ComposedChart>
       </ResponsiveContainer>
