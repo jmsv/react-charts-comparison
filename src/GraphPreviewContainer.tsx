@@ -11,12 +11,14 @@ import { GithubOutlined } from "@ant-design/icons"
 interface IGraphPreviewContainerProps {
   title: string
   ghLink?: string
+  code?: string
 }
 
 export const GraphPreviewContainer: React.FC<IGraphPreviewContainerProps> = ({
   children,
   title,
   ghLink,
+  code,
 }) => {
   return (
     <Card
@@ -60,9 +62,10 @@ export const GraphPreviewContainer: React.FC<IGraphPreviewContainerProps> = ({
           >
             {prettier
               .format(
-                reactElementToJSXString(children, {
-                  // displayName: () => "Chart",
-                }),
+                code ||
+                  reactElementToJSXString(children, {
+                    // displayName: () => "Chart",
+                  }),
                 {
                   semi: false,
                   printWidth: 80,
